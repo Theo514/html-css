@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeos com HTML</title>
+  </head>
+  <body>
+    <div>
+      <h1>Inserindo vídeos hospedados localmente</h1>
+      <p>Este vídeo está hospedado no meu próprio servidor.</p>
+      <video src="midia/pexels-videos.mp4" width="560" controls></video>
+    </div>
+    <div>
+      <h1>Opções para evitar a incompatibilidade de vídeos dos navegadores</h1>
+      <video
+        width="560"
+        poster="imagens/limao-siciliano.webp"
+        controls
+        autoplay
+        loop
+      >
+        <source src="midia/pexels-videos.mp4" type="video/mp4" />
+        <source src="midia/pexels-videos.m4v" type="video/mp4" />
+        <source src="midia/pexels-videos.ogv" type="video/ogg" />
+        <source src="midia/pexels-videos.webm" type="video/webm" />
+        <p>Seu navegador não tem compatibilidade com a reprodução de vídeos.</p>
+      </video>
+    </div>
+    <div>
+      <h1>Inserindo vídeo do You Tube</h1>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/LW0bhKitRBk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div>
+      <h1>Inserindo vídeos do Vimeo</h1>
+      <iframe
+        src="https://player.vimeo.com/video/417678056?h=058f444f1e&color=c9ff23&title=0&byline=0&portrait=0"
+        width="560"
+        height="315"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>
